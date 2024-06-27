@@ -12,17 +12,24 @@
     <label>Email Id:</label><input type="email" id="mailid" name="Email ID"><br>
     <button onclick="dialogueBox()">Submit</button>
     
-    <script>
-        function dialogueBox() {
-           //get the values from the input field 
-           const firstName=document.getElementById("name").value;
-           const LastName=document.getElementById("lastname").value;
-           const phoneNumber=document.getElementById("phone").value;
-           const emailId=document.getElementById("mailid").value;
+   <script>
+    function dialogueBox() {
+        //get the values from the input field 
+        const firstName = document.getElementById("name").value;
+        console.log("First Name: ", firstName);  
 
-           const message= ` First Name: ${firstName} \n Last Name: ${LastName} \n Phone Number: ${phoneNumber} \n Email ID: ${emailId}`;
+        const LastName = document.getElementById("lastname").value;
+        console.log("Last Name: ", LastName);
+
+        const phoneNumber = document.getElementById("phone").value;
+        console.log("Phone Number: ", phoneNumber);
+
+        const emailId = document.getElementById("mailid").value;
+        console.log("Email ID: ", emailId);
+
+        const message= `First Name: ${firstName} \nLast Name: ${LastName} \nPhone Number: ${phoneNumber} \nEmail ID: ${emailId}`;
         alert(message);
-        }
-    </script>
+    }
+</script>
 </body>
 </html>
