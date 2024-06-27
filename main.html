@@ -1,16 +1,28 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Login</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <label>First Name:</label><input type="text" id="name"><br>
+    <label>Last Name:</label><input type="text" id="lastname"><br>
+    <label>Phone Number:</label><input type="number" id="phone"><br>
+    <label>Email Id:</label><input type="email" id="mailid"><br>
+    <button onclick="dialogueBox()">Submit</button>
+    
+    <script>
+        function dialogueBox() {
+           //get the values from the input field 
+           const firstName=document.getElementById("name").value;
+           const LastName=document.getElementById("lastname").value;
+           const phoneNumber=document.getElementById("phone").value;
+           const emailId=document.getElementById("mailid").value;
 
+           const message= ` First Name: ${firstName} \n Last Name: ${LastName} \n Phone Number: ${phoneNumber} \n Email ID: ${emailId}`;
+        alert(message);
+        }
+    </script>
 </body>
-
 </html>
